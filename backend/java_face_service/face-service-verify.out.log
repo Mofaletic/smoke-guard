@@ -1,0 +1,71 @@
+Using cached local face detection model: C:\Users\31957\smartjavaai_cache\cache\repo\model\undefined\ai\djl\localmodelzoo\87b9f3f6760e2ab0e59ac4e87e4cc69e8c6a5d11\ultranet
+09:42:24.402 [main] INFO cn.smartjavaai.common.config.Config - 当前操作系统：Windows 11
+09:42:24.441 [main] INFO cn.smartjavaai.common.config.Config - 设置默认引擎：PyTorch
+09:42:24.442 [main] DEBUG cn.smartjavaai.face.factory.FaceDetModelFactory - 缓存目录：C:\Users\31957\smartjavaai_cache
+09:42:24.475 [main] DEBUG ai.djl.repository.RepositoryFactoryImpl - mount-s3 is not supported on Windows
+09:42:24.476 [main] DEBUG ai.djl.repository.RepositoryFactoryImpl - gcsfuse is not supported on Windows
+09:42:24.480 [main] DEBUG ai.djl.repository.zoo.DefaultModelZoo - Scanning models in repo: class ai.djl.repository.SimpleRepository, file:/C:/Users/31957/smartjavaai_cache/cache/repo/model/undefined/ai/djl/localmodelzoo/87b9f3f6760e2ab0e59ac4e87e4cc69e8c6a5d11/ultranet/
+09:42:24.482 [main] DEBUG ai.djl.repository.zoo.ModelZoo - Loading model with Criteria:
+	Application: UNDEFINED
+	Input: interface ai.djl.modality.cv.Image
+	Output: class ai.djl.modality.cv.output.DetectedObjects
+	Engine: PyTorch
+	ModelZoo: ai.djl.localmodelzoo
+
+09:42:24.484 [main] DEBUG ai.djl.repository.zoo.ModelZoo - Searching model in specified model zoo: ai.djl.localmodelzoo
+09:42:24.487 [main] DEBUG ai.djl.engine.Engine - Registering EngineProvider: RPC
+09:42:24.488 [main] DEBUG ai.djl.engine.Engine - Registering EngineProvider: PyTorch
+09:42:24.489 [main] DEBUG ai.djl.engine.Engine - Registering EngineProvider: Rust
+09:42:24.491 [main] DEBUG ai.djl.engine.Engine - Registering EngineProvider: TensorFlow
+09:42:24.492 [main] DEBUG ai.djl.engine.Engine - Registering EngineProvider: MXNet
+09:42:24.493 [main] DEBUG ai.djl.engine.Engine - Registering EngineProvider: OnnxRuntime
+09:42:24.494 [main] DEBUG ai.djl.engine.Engine - Found default engine: PyTorch
+09:42:24.522 [main] DEBUG ai.djl.repository.zoo.ModelZoo - Checking ModelLoader: djl://ai.djl.localmodelzoo/ultranet [
+	ai.djl.localmodelzoo/ultranet/ultranet {}
+]
+09:42:24.529 [main] DEBUG ai.djl.repository.MRL - Preparing artifact: file:/C:/Users/31957/smartjavaai_cache/cache/repo/model/undefined/ai/djl/localmodelzoo/87b9f3f6760e2ab0e59ac4e87e4cc69e8c6a5d11/ultranet/, ai.djl.localmodelzoo/ultranet/ultranet {}
+09:42:24.529 [main] DEBUG ai.djl.repository.SimpleRepository - Skip prepare for local repository.
+Loading:     100% |========================================|
+09:42:24.616 [main] INFO ai.djl.util.Platform - Found matching platform from: jar:file:/Z:/home/bearpi/project/bearpi-hm_nano/applications/BearPi/BearPi-HM_Nano/sample/D5_iot_mqtt/backend/java_face_service/target/java-face-service-1.0.0.jar!/native/lib/pytorch.properties
+09:42:24.616 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Found bundled PyTorch package: cpu-win-x86_64:2.7.1-20250812.
+09:42:24.617 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Using cache dir: C:\Users\31957\smartjavaai_cache\pytorch
+09:42:24.621 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\asmjit.dll
+09:42:24.622 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\c10.dll
+09:42:24.625 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\libiomp5md.dll
+09:42:24.627 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\libiompstubs5md.dll
+09:42:24.628 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\uv.dll
+09:42:24.629 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\fbgemm.dll
+09:42:24.631 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\torch_cpu.dll
+09:42:24.878 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\torch.dll
+09:42:24.880 [main] DEBUG ai.djl.pytorch.jni.LibUtils - Loading native library: C:\Users\31957\smartjavaai_cache\pytorch\2.7.1-20250812-cpu-win-x86_64\0.34.0-djl_torch.dll
+09:42:24.885 [main] INFO ai.djl.pytorch.engine.PtEngine - PyTorch graph executor optimizer is enabled, this may impact your inference latency and throughput. See: https://docs.djl.ai/master/docs/development/inference_performance_optimization.html#graph-executor-optimization
+09:42:24.897 [main] INFO ai.djl.pytorch.engine.PtEngine - Number of inter-op threads is 24
+09:42:24.899 [main] INFO ai.djl.pytorch.engine.PtEngine - Number of intra-op threads is 24
+09:42:24.910 [main] DEBUG ai.djl.pytorch.jni.JniUtils - mapLocation: false
+09:42:24.911 [main] DEBUG ai.djl.pytorch.jni.JniUtils - extraFileKeys: []
+09:42:25.017 [main] DEBUG cn.smartjavaai.face.model.facedect.CommonFaceDetModel - 当前设备: cpu()
+09:42:25.018 [main] DEBUG cn.smartjavaai.face.model.facedect.CommonFaceDetModel - 当前引擎: PyTorch
+09:42:25.018 [main] DEBUG cn.smartjavaai.face.model.facedect.CommonFaceDetModel - 模型推理器线程池最大数量: 32
+Using cached local face recognition model: C:\Users\31957\smartjavaai_cache\cache\repo\model\undefined\ai\djl\localmodelzoo\b1ad306b64bfb4e63823b0ce268f9c7d1e7c48c0\face_feature
+09:42:25.023 [main] DEBUG cn.smartjavaai.face.factory.FaceRecModelFactory - 缓存目录：C:\Users\31957\smartjavaai_cache
+09:42:25.027 [main] DEBUG ai.djl.repository.zoo.DefaultModelZoo - Scanning models in repo: class ai.djl.repository.SimpleRepository, file:/C:/Users/31957/smartjavaai_cache/cache/repo/model/undefined/ai/djl/localmodelzoo/b1ad306b64bfb4e63823b0ce268f9c7d1e7c48c0/face_feature/
+09:42:25.028 [main] DEBUG ai.djl.repository.zoo.ModelZoo - Loading model with Criteria:
+	Application: UNDEFINED
+	Input: interface ai.djl.modality.cv.Image
+	Output: class [F
+	Engine: PyTorch
+	ModelZoo: ai.djl.localmodelzoo
+
+09:42:25.028 [main] DEBUG ai.djl.repository.zoo.ModelZoo - Searching model in specified model zoo: ai.djl.localmodelzoo
+09:42:25.029 [main] DEBUG ai.djl.repository.zoo.ModelZoo - Checking ModelLoader: djl://ai.djl.localmodelzoo/face_feature [
+	ai.djl.localmodelzoo/face_feature/face_feature {}
+]
+09:42:25.029 [main] DEBUG ai.djl.repository.MRL - Preparing artifact: file:/C:/Users/31957/smartjavaai_cache/cache/repo/model/undefined/ai/djl/localmodelzoo/b1ad306b64bfb4e63823b0ce268f9c7d1e7c48c0/face_feature/, ai.djl.localmodelzoo/face_feature/face_feature {}
+09:42:25.030 [main] DEBUG ai.djl.repository.SimpleRepository - Skip prepare for local repository.
+Loading:     100% |========================================|
+09:42:25.033 [main] DEBUG ai.djl.pytorch.jni.JniUtils - mapLocation: false
+09:42:25.033 [main] DEBUG ai.djl.pytorch.jni.JniUtils - extraFileKeys: []
+09:42:25.227 [main] DEBUG cn.smartjavaai.face.model.facerec.CommonFaceRecModel - 当前设备: cpu()
+09:42:25.228 [main] DEBUG cn.smartjavaai.face.model.facerec.CommonFaceRecModel - 当前引擎: PyTorch
+09:42:25.229 [main] DEBUG cn.smartjavaai.face.model.facerec.CommonFaceRecModel - 模型推理器线程池最大数量: 32
+Java face service listening on http://127.0.0.1:8787
